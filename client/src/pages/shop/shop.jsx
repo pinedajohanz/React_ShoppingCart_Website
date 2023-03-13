@@ -8,7 +8,7 @@ export const Shop = () => {
     <div className='shop'>
         <div>
             <div className='shopTitle'>
-                <h1> My Shop </h1>
+                <h1> Johanz Shop </h1>
             </div>
             <div className='products'>
                 {PRODUCTS.map((product) => (

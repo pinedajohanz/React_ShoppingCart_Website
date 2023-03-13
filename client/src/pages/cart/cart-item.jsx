@@ -10,11 +10,13 @@ export const CartItem = (props) => {
         <img src={productImage} />
         <div className='description'>
             <p> <b> {productName} </b> </p>
-            <p> ₱{price} </p>
+            <p> Price: ₱{price} </p>
             {/* item count indicator */}
             <div className='countHandler'>
                 <button onClick={() => removeFromCart(id)}> - </button>
-                <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
+                <input 
+                    value={cartItems[id]} 
+                    onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                 <button onClick={() => addToCart(id)}> + </button>
             </div>
         </div>
